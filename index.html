@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="header_left">
+                <p class="nav-heading">SORTING VISUALIZER</p>
+                <div class="algos">
+                    <button>BUBBLE</button>
+                    <button>SELECTION</button>
+                    <button>INSERTION</button>
+                    <button>MERGE</button>
+                    <button>QUICK</button>
+                    <button>HEAP</button>
+                </div>   
+            </div> 
+
+            <div class="array-inputs">
+                <p>SIZE OF THE ARRAY</p>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=80>
+                <p>SPEED OF THE ALGORITHM</p> 
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+                <button id="a_generate">GENERATE NEW ARRAY!</button>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <section>
+
+        <div id="Info_Cont1">
+            <p>Sort:</p>
+            <p>Average Complexity:</p>
+            <p>Worst Complexity:</p>
+            <p>Best Complexity:</p>
+            <p>Space Complexity:</p>
+        </div> 
+
+        <div id="array_container">
+
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+    <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>
+    <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+
+
+</html>
